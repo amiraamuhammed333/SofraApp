@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_30dp"
+        android:id="@+id/about_app_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/dim_25sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dim_32dp"
+        android:textStyle="bold"
+        android:text="@string/who_are_we"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_400dp"
+        android:id="@+id/about_app_tv_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_16dp"
+        android:background="@drawable/rectangle_curved_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_app_tv"
+        android:textSize="@dimen/dim_25sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:textStyle="bold"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

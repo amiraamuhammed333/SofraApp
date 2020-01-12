@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_et_restaurant_name"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:hint="restaurant_name"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_person"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_et_restaurant_email"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/emial"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:textColorHint="@color/white"
+
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_email"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_et_Delivery_time"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/delivery_time"
+        android:inputType="time"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_time"
+        android:textColorHint="@color/white"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_spinner_city"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/city"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_home"
+        android:textColorHint="@color/white"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_spinner_region"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/region"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_home"
+        android:textColorHint="@color/white"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_et_password"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_password"
+        android:textColorHint="@color/white"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_et_confiem_password"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/confirm_password"
+        android:inputType="numberPassword"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_password"
+        android:textColorHint="@color/white"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_et_Minimum_Order"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/minimum_order"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/money"
+        android:textColorHint="@color/white"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step1_et_Delivery_Charge"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/delivery_charge"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:drawableStart="@drawable/money"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:textColorHint="@color/white"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <Button
+        android:id="@+id/signup_step1_btn_login"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_70dp"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:background="@drawable/btn"
+        android:text="@string/follow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_25sp" />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/signup_client_iv_photo"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_marginStart="@dimen/dim_130dp"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:background="@drawable/oval"
+        app:srcCompat="@drawable/ic_person_add" />
+
+    <EditText
+        android:id="@+id/edit_client_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:paddingStart="@dimen/dim_8dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:background="@drawable/shadow_rectangle_grey"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="@string/name"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_client_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:background="@drawable/shadow_rectangle_grey"
+        android:drawableStart="@drawable/ic_email"
+        android:paddingStart="@dimen/dim_8dp"
+        android:hint="@string/emial"
+        android:inputType="textEmailAddress"
+       />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white" />
+
+
+    <EditText
+        android:id="@+id/ediy_client_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:paddingStart="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:background="@drawable/shadow_rectangle_grey"
+        android:drawableStart="@drawable/ic_phone"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        />
+
+    <Spinner
+        android:id="@+id/edit_client_spinner_city"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_home"
+        android:background="@drawable/shadow_rectangle_grey"
+        android:hint="@string/city"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/ediy_client_spinner_region"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:background="@drawable/shadow_rectangle_grey"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_home"
+        android:hint="@string/region"
+        android:inputType="text"
+       />
+
+
+
+    <Button
+        android:id="@+id/edit_btn_login"
+        android:layout_width="@dimen/dim_200dp"
+        android:layout_height="@dimen/dim_50dp"
+        android:layout_marginStart="@dimen/dim_70dp"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:background="@drawable/btn"
+        android:text="@string/Edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_25sp" />
+
+
+</LinearLayout>

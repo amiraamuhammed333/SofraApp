@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_430dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dim_4dp"
+        android:layout_marginStart="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/dim_8dp"
+        android:id="@+id/shopping_recyclerView"
+        />
+    <TextView
+        android:layout_width="@dimen/dim_150dp"
+        android:layout_height="@dimen/dim_30dp"
+        android:text="@string/total"
+        app:layout_constraintTop_toBottomOf="@id/shopping_recyclerView"
+        android:id="@+id/shopping_tv_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_20sp"
+        />
+    <TextView
+        android:layout_width="@dimen/dim_60dp"
+        android:layout_height="@dimen/dim_60dp"
+        android:id="@+id/shopping_tv_total_price"
+        app:layout_constraintTop_toBottomOf="@id/shopping_tv_total"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shadow_oval"
+        />
+
+
+
+    <Button
+        android:layout_width="@dimen/dim_160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/shopping_tv_total_price"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:background="@drawable/btn"
+        android:text="@string/confirmation_order"
+        app:layout_constraintEnd_toStartOf="@id/shopping_btn_add"
+        android:layout_marginEnd="@dimen/dim_16dp"
+        android:layout_marginBottom="@dimen/dim_32dp"
+        android:layout_marginStart="@dimen/dim_32dp"
+        android:id="@+id/shopping_btn_confirm"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="@dimen/dim_160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/shopping_tv_total_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/dim_32dp"
+        android:layout_marginBottom="@dimen/dim_32dp"
+        android:background="@drawable/btn"
+        android:text="@string/add_more_order"
+        app:layout_constraintStart_toEndOf="@id/shopping_btn_confirm"
+        android:layout_marginStart="@dimen/dim_16dp"
+        android:id="@+id/shopping_btn_add"
+        android:textColor="@color/white"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

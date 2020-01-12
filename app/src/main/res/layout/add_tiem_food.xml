@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_grey">
+
+    <TextView
+        android:layout_width="@dimen/dim_150dp"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_marginTop="@dimen/dim_32dp"
+        android:gravity="center"
+        android:text="@string/photo_food"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_25sp"
+        android:background="@drawable/dialog_shape"
+        android:textStyle="bold"
+        android:id="@+id/add_item_food_tv_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dim_90dp"
+            android:layout_height="@dimen/dim_90dp"
+            android:id="@+id/add_item_food_circleimage_photo"
+            app:layout_constraintTop_toBottomOf="@id/add_item_food_tv_food"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/ic_add_circle"
+            android:layout_marginTop="@dimen/dim_16dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_overlay="true"
+            android:outlineSpotShadowColor="@color/white"
+
+            />
+
+
+
+
+
+
+    <EditText
+        android:layout_width="@dimen/dim_200dp"
+        android:layout_height="@dimen/dim_40dp"
+         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_item_food_circleimage_photo"
+        android:layout_marginTop="@dimen/dim_32dp"
+        android:id="@+id/add_item_food_et_food_name"
+        android:inputType="text"
+        android:hint="food name"
+        android:paddingStart="@dimen/dim_8dp"
+        android:background="@drawable/rectangle_curved_white"
+        />
+
+    <Button
+        android:layout_width="@dimen/dim_150dp"
+        android:layout_height="@dimen/dim_40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_item_food_et_food_name"
+        android:layout_marginTop="@dimen/dim_32dp"
+        android:id="@+id/add_item_food_btn_add"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/add"
+        android:background="@drawable/btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dim_32dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".view.activity.SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/splash_activity_iv_logo1"
+        android:layout_width="@dimen/dim_150dp"
+        android:layout_height="@dimen/dim_150dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+       />
+
+
+    <ImageView
+        android:id="@+id/splash_activity_iv_logo2"
+        android:layout_width="129dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:id="@+id/splash_activity_iv_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dim_150dp"
+        />
+
+    <Button
+        android:layout_width="@dimen/dim_200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/splash_activity_iv_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/order_food"
+        android:id="@+id/splash_activity_btn_order_food"
+        android:layout_marginTop="@dimen/dim_70dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn"
+        />
+    <Button
+        android:layout_width="@dimen/dim_200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/splash_activity_btn_order_food"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/spash_activity_btn_sell_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/sell_food"
+        android:textColor="@color/white"
+        android:background="@drawable/btn"
+        android:layout_marginTop="@dimen/dim_20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

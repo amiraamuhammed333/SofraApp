@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_16dp"
+        android:text="@string/information_contact"
+        android:id="@+id/signup_step2_tv_signin"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:textSize="@dimen/dim_25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step2_et_phone"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:id="@+id/signup_step2_et_whats"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:hint="@string/whats"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:src="@color/white"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_16dp"
+        android:text="@string/store_image"
+        android:id="@+id/signup_step2_tv_store_image"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:textSize="@dimen/dim_25sp"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/dim_100dp"
+        app:srcCompat="@drawable/ic_pic"
+        android:id="@+id/signup_step2_iv_photo"
+        android:layout_marginStart="@dimen/dim_30dp"
+        />
+
+    <Button
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:layout_marginStart="@dimen/dim_70dp"
+        android:layout_width="@dimen/dim_200dp"
+        android:layout_height="@dimen/dim_50dp"
+        android:background="@drawable/btn"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_25sp"
+        android:id="@+id/signup_step2_btn_signup"
+        />
+
+
+
+</LinearLayout>
